@@ -27,10 +27,10 @@ function preload() {
   for (let i = 0; i < 2; i++) {
     voice[i] = loadSound(`img/v/${i}.mp3`);
   }
-  for (let i = 2; i < 3; i++) {
+  for (let i = 2; i < 11; i++) {
     voice[i] = loadSound(`img/v/${i}.wav`);
   }
-
+  voice[11] = loadSound("img/v/11.mp3");
   // Add more images as   needed
 }
 
@@ -64,6 +64,10 @@ function keyPressed() {
   console.log(slider);
   if (key === "k" || key === "K") {
     currentIndex = (currentIndex + 1) % images.length;
+    if (slider == 26 && onetime2) {
+      slider--;
+      onetime2 = false;
+    }
     slider++;
   }
   if (key === "e" || key === "E") {
@@ -82,6 +86,42 @@ function keyPressed() {
   }
   if (slider == 21) {
     playv(1);
+  }
+  if (slider == 23) {
+    playv(2);
+  }
+  if (slider == 24) {
+    playv(3);
+  }
+  if (slider == 25) {
+    playv(4);
+  }
+  if (slider == 26) {
+    playv(5);
+  }
+  if (slider == 27) {
+    playv(6);
+  }
+  if (slider == 28) {
+    playv(7);
+  }
+  if (slider == 44) {
+    playv(8);
+  }
+  if (slider == 45) {
+    playv(8);
+  }
+  if (slider == 46) {
+    playv(8);
+  }
+  if (slider == 47) {
+    playv(9);
+  }
+  if (slider == 48) {
+    playv(10);
+  }
+  if (slider == 50) {
+    playv(11);
   }
 }
 function windowResized() {
