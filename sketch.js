@@ -18,7 +18,7 @@ let textContent =
   "TL;DR -> \nHow much longer are we gonna ignore the metaphysical affect of stories within the trinity of life? Apocalypse is the Raison D'etre of memory and the directionality of its multiplication is the project of history, future, and those in power. It will remain a theater until we stare at its eyes.";
 
 function preload() {
-  for (let i = 0; i < 44; i++) {
+  for (let i = 0; i < 51; i++) {
     images[i] = loadImage(`img/${i}.jpg`);
   }
   // staticImg = loadImage("white.png");
